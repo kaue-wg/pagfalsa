@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saldo bancário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <style>
+            h1 {
+                color: #1C1C1C
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Verifique seu saldo bancário em tempo real!</h1> 
+            <div class="container">
+                <form id="formularioIMC" class="formulario-imc" name="formularioIMC">
+
+                    <label for="Numero_Conta">Numero da Conta: </label>
+                    <input type="text" id="Numero_Conta" name="Numero_Conta" placeholder="Informe o número da conta" required=""><br><br>
+
+                    <label for="CPF">CPF: </label>
+                    <input type="text" id="CPF" name="CPF" placeholder="Informe o seu CPF" required=""><br><br>
+
+                    <label for="senha">Senha: </label>
+                    <input type="number" id="senha" name="senha" step="0.01" placeholder="Informe sua senha" required=""><br><br>
+
+                    <label for="Frase_secreta">Frase secreta:</label>
+                    <input type="text" id="Frase_secreta" name="Frase_secreta" placeholder="Informe sua frase secreta" required=""><br><br>
+
+                    <input type="submit" value="Enviar" id="enviar" name="enviar"/>
+                    <input type="reset" id="limpar" name="limpar"/><br>
+                    
+                </form>
+                <script src="js.js"></script>
+            </div>
+            <br>
+            <div class="mensagem" id="mensagem">
+                <h2>Resultado</h2>
+                <span id="mensagemSaida"></span>
+            </div>
+
+    </body>
+</html>
